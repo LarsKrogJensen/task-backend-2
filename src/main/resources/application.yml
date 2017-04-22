@@ -5,7 +5,7 @@ spring:
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
         platform: postgres
-        url: jdbc:postgresql://192.168.1.36:5432/tasks
+        url: jdbc:${DATABASE_URL:postgresql://192.168.1.36:5432/tasks}
         username: postgres
         password: postgres
         driverClassName: org.postgresql.Driver
